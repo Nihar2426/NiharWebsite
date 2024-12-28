@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'torusregular';
+    src: url('torus_regular-webfont.woff2') format('woff2'),
+         url('torus_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'torusregular';
+    font-weight: normal;
+    font-style: normal;
+    background-color: #FFD8D8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #FF6B6B;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header .logo {
+    max-width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+
+.about-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2rem auto;
+    flex: 1;
+}
+
+.about-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.about-container h2 {
+    font-size: 1.8rem;
+    color: #FF6B6B;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-container p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.about-container ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.about-container li {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+.founders {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.founder {
+    text-align: center;
+}
+
+.founder-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 30%;
+    object-fit: cover;
+    border: 3px solid greenyellow;
+}
+
+.founder h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0.5rem 0 0.2rem;
+}
+
+.founder p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.footer {
+    background-color: #FF6B6B;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

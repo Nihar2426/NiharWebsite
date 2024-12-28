@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'torusregular';
+    src: url('torus_regular-webfont.woff2') format('woff2'),
+         url('torus_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'torusregular';
+    font-weight: normal;
+    font-style: normal;
+    background-color: #FFD8D8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #FF6B6B;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header .logo {
+    max-width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+
+.contact-us-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.contact-us-container h1{
+    text-align: center;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 2rem;
+    padding-right: 3.7rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 1.8rem;
+    color: #FF6B6B;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 1rem;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button{
+    margin-left: 260px;
+}
+
+.submit-button {
+    background-color: #FF6B6B;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #ff4b4b;
+}
+
+.company-info {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.company-info h2 {
+    font-size: 1.8rem;
+    color: #FF6B6B;
+    margin-bottom: 1.5rem;
+}
+
+.company-info p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.location-map iframe {
+    width: 100%;
+    max-width: 1000px;
+    height: 450px;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+.footer {
+    background-color: #FF6B6B;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

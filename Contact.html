@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - mOnOmart</title>
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="preload" href="/torus_regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="./images/logo.png" class="logo">
+        </a>
+    </header>
+
+    <div class="contact-us-container">
+        <h1>Contact Us</h1>
+        
+        <div class="contact-form">
+            <h2>Send us a message</h2>
+            <form action="Contacted.html" method="get">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+        
+        <div class="company-info">
+            <h2>Our Contact Information</h2>
+            <p><strong>mOnOmart</strong><br>
+            GCOE Nagpur,Maharashtra<br>
+            <strong>Email:</strong> support@monomart.com<br>
+            <strong>Phone:</strong> +1 234 567 890<br>
+            <strong>Business Hours:</strong> Mon - Fri, 9:00 AM - 6:00 PM</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 mOnOmart. All Rights Reserved.</p>
+        <p><a href="index.html">Go to main website | <a href="PriPol.html">Privacy Policy</a></a></p>
+    </footer>
+
+</body>
+</html>

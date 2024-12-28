@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'torusregular';
+    src: url('torus_regular-webfont.woff2') format('woff2'),
+         url('torus_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'torusregular';
+    font-weight: normal;
+    font-style: normal;
+    background-color: #FFD8D8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #FF6B6B;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header .logo {
+    max-width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+
+.buy-now-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.product-review h1 {
+    font-size: 1.8rem;
+    color: #FF6B6B;
+    margin-bottom: 1.5rem;
+}
+
+.product-info {
+    display: flex;
+    gap: 2rem;
+}
+
+.product-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-details h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #FF6B6B;
+    margin: 1rem 0;
+}
+
+.quantity {
+    font-size: 1rem;
+    color: #555;
+}
+
+.shipping-info h1 {
+    font-size: 1.8rem;
+    color: #FF6B6B;
+    margin-bottom: 1.5rem;
+}
+
+#shipping-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#shipping-form label {
+    font-size: 1rem;
+    color: #333;
+}
+
+#shipping-form input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: #FF6B6B;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 2rem;
+}
+
+.submit-button:hover {
+    background-color: #ff4b4b;
+}
+
+.footer {
+    background-color: #FF6B6B;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

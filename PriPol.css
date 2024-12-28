@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'torusregular';
+    src: url('torus_regular-webfont.woff2') format('woff2'),
+         url('torus_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'torusregular';
+    font-weight: normal;
+    font-style: normal;
+    background-color: #FFD8D8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.header {
+    background-color: #FF6B6B;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header .logo {
+    max-width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+
+.policy-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2rem auto;
+    flex: 1;
+}
+
+.policy-container h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.policy-container h2 {
+    font-size: 1.5rem;
+    color: #FF6B6B;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.policy-container p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.policy-container ul {
+    padding-left: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.policy-container li {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.policy-container a {
+    color: #FF6B6B;
+    text-decoration: none;
+}
+
+.policy-container a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #FF6B6B;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

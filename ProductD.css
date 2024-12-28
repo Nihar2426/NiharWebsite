@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'torusregular';
+    src: url('torus_regular-webfont.woff2') format('woff2'),
+         url('torus_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'torusregular';
+    font-weight: normal;
+    font-style: normal;
+    background-color: #FFD8D8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #FF6B6B;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header .logo {
+    max-width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+
+.product-details-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    flex: 1;
+}
+
+.product-details {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.product-info {
+    max-width: 600px;
+}
+
+.product-info h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    color: #FF6B6B;
+    margin: 1rem 0;
+}
+
+.product-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.quantity-selector {
+    margin-bottom: 1rem;
+}
+
+.quantity-selector label {
+    font-size: 1rem;
+    color: #333;
+    margin-right: 10px;
+}
+
+.quantity-selector input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 60px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-to-cart {
+    background-color: #FF6B6B;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: brown;
+}
+
+.product-features h2 {
+    font-size: 1.8rem;
+    color: #FF6B6B;
+    margin-bottom: 1rem;
+}
+
+.product-features ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.product-features li {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+.product-reviews {
+    margin-top: 3rem;
+}
+
+.product-reviews h2 {
+    font-size: 1.8rem;
+    color: #FF6B6B;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.product-reviews .review {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.product-reviews p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.view-all-reviews {
+    font-size: 1rem;
+    color: #FF6B6B;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.view-all-reviews:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #FF6B6B;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
