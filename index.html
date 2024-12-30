@@ -172,22 +172,46 @@
         </div>
     </div>
 
-    <script>
-        var MenuItems = document.getElementById("MenuItems");
+   <script>
+  
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
 
-        MenuItems.style.maxHeight = "0px";
+    function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "200px"; // Show menu
+        } else {
+            MenuItems.style.maxHeight = "0px"; // Hide menu
+        }
+    }
 
-        function menutoggle(){
-            if(MenuItems.style.maxHeight == "0px")
-        {
-            MenuItems.style.maxHeight = "200px";
+    function isLoggedIn() {
+        return localStorage.getItem('isLoggedIn') === 'true';  // Check if user is logged in (simple flag)
+    }
+
+  
+    function promptLogin(event) {
+        if (!isLoggedIn()) {
+            event.preventDefault();  // Prevent navigation
+            alert("You need to be logged in to access this page.");
+            // Optionally redirect to the login page
+            window.location.href = "Login.html";  // Redirect to Login page if not logged in
         }
-        else
-        {
-            MenuItems.style.maxHeight = "0px";
-        }
-        }
-    </script>
+    }
+
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      
+        const protectedLinks = document.querySelectorAll('a, button');
+
+       
+        protectedLinks.forEach(function (element) {
+           
+            element.addEventListener('click', promptLogin);
+        });
+    });
+</script>
+
 
   </body>
 </html>
