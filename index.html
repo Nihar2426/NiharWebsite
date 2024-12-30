@@ -173,7 +173,7 @@
     </div>
 
    <script>
-  
+   
     var MenuItems = document.getElementById("MenuItems");
     MenuItems.style.maxHeight = "0px";
 
@@ -185,32 +185,33 @@
         }
     }
 
+   
     function isLoggedIn() {
         return localStorage.getItem('isLoggedIn') === 'true';  // Check if user is logged in (simple flag)
     }
 
-  
+    
     function promptLogin(event) {
         if (!isLoggedIn()) {
-            event.preventDefault();  // Prevent navigation
+            event.preventDefault();  // Prevent navigation if not logged in
             alert("You need to be logged in to access this page.");
             // Optionally redirect to the login page
             window.location.href = "Login.html";  // Redirect to Login page if not logged in
         }
     }
 
-    
+   
     document.addEventListener('DOMContentLoaded', function () {
-      
-        const protectedLinks = document.querySelectorAll('a, button');
+        // Select only the links or buttons that should require login (e.g., Account, Products, etc.)
+        const protectedLinks = document.querySelectorAll('a.login-required, button.login-required'); // Targeting specific protected links
 
-       
+
         protectedLinks.forEach(function (element) {
-           
             element.addEventListener('click', promptLogin);
         });
     });
 </script>
+
 
 
   </body>
